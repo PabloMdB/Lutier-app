@@ -1,0 +1,92 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #62696e);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#ingresar{
+    text-decoration: none;
+    color: black;
+}
+/* Formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.986);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fffdfd;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px rgba(235, 11, 11, 0.5);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #353c41;
+}
+
+/* Mensaje de error */
+#error-message {
+    text-align: center;
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
